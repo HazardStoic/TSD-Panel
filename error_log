@@ -1,0 +1,71 @@
+[18-Jun-2024 08:40:33 UTC] PHP Warning:  file_get_contents(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/install.php on line 15
+[18-Jun-2024 08:40:34 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/db.php on line 2
+[18-Jun-2024 08:40:34 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/db.php on line 2
+[18-Jun-2024 08:40:34 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/db.php on line 2
+[18-Jun-2024 08:40:34 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/db.php on line 9
+[18-Jun-2024 08:41:52 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/db.php on line 2
+[18-Jun-2024 08:41:52 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/db.php on line 2
+[18-Jun-2024 08:41:52 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/db.php on line 2
+[18-Jun-2024 08:41:52 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/db.php on line 9
+[01-Jul-2024 11:24:30 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/srpcirty/public_html/install.php on line 63
+[01-Jul-2024 11:24:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/srpcirty/public_html/install.php:64) in /home/srpcirty/public_html/install.php on line 72
+[01-Jul-2024 11:35:59 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/srpcirty/public_html/install.php on line 63
+[01-Jul-2024 11:35:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/srpcirty/public_html/install.php:64) in /home/srpcirty/public_html/install.php on line 72
+[01-Jul-2024 11:37:44 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/srpcirty/public_html/install.php on line 63
+[01-Jul-2024 11:37:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/srpcirty/public_html/install.php:64) in /home/srpcirty/public_html/install.php on line 72
+[01-Jul-2024 11:49:08 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:49:08 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:49:08 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:49:27 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:49:27 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:49:27 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:49:27 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/create_db.php on line 23
+[01-Jul-2024 11:51:03 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:51:03 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:51:03 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:51:03 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/create_db.php on line 23
+[01-Jul-2024 11:51:53 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:51:53 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:51:53 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:51:53 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/create_db.php on line 23
+[01-Jul-2024 11:51:59 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:51:59 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:51:59 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:52:14 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:52:14 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:52:14 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:52:14 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/create_db.php on line 23
+[01-Jul-2024 11:55:29 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:29 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:29 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:29 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/create_db.php on line 23
+[01-Jul-2024 11:55:35 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:35 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:35 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:37 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:37 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:37 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:55:37 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/create_db.php on line 23
+[01-Jul-2024 11:56:35 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:56:35 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:56:35 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:17 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:17 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:17 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:28 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:28 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:28 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:46 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:46 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:46 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:54 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:54 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:54 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 11:59:54 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/srpcirty/public_html/create_db.php on line 23
+[01-Jul-2024 12:01:25 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 12:01:25 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 12:01:25 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 12:01:46 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 12:01:46 UTC] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 12:01:46 UTC] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/srpcirty/public_html/create_db.php on line 3
+[01-Jul-2024 12:25:59 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/srpcirty/public_html/install.php on line 63

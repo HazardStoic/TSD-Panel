@@ -1,0 +1,410 @@
+{% include 'header.twig' %}
+
+<style>
+@media (max-width:991px){ #block_93 .totals-block__card-right {margin-left:-13px;padding-left:22px;border:2px solid;border-bottom-width:0px;border-top-width:0px;border-right-width:0px;border-radius: 0px 12px 12px 0px;margin-right:-10px;}}.news-item{display: flex;align-items: flex-start;gap: 20px;}.news-item:first-child{margin-top:-20px;}.news-icon-inline{width: 30px;margin-right:7px;}.news-icon img{width: 100%;}.news-details{flex: 1;}.news-title{display: flex;font-size: 14px;margin-bottom:0px;padding:7px ;background:;border-radius:12px 12px 0 0;}.news-content{margin: 0;color: #000;padding:7px ;background:;border-radius:0px 0px 12px 12px;}.headsir{position:sticky;top:0;width:101%;font-weight: 700;font-size: 22px;padding: 1rem 1rem;color: #fff;margin:-1.2px 0px 0px -1.2px;border-radius:20px 20px 0px 0px;background: #e70720e0;box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.1);}.news-date {margin: 0;padding:0.5px 0px;color: #fff;font-size: 12px;width:50%;text-align: center;border-radius:8px;margin-bottom:10px;margin-top:20px;}.ssw{max-height: 450px;overflow-y: auto;padding-top: 25px;padding-bottom: 25px;padding-right: 20px;padding-left: 20px;}@media (min-width: 992px){.news-date{width:40%;}}.select2-container--default .select2-results > .select2-results__options {max-height: 412px;overflow-y: auto;}.body .form-group .select2-results__option {border-bottom: 0px solid white;}.select2-container .select2-selection--single .select2-selection__rendered{padding: 4px;margin-left:-5px}.body .style-bg-primary-alpha-10 {box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);transform: skew(0deg, 0deg);overflow: hidden;}.body .style-bg-primary-alpha-10:before {content: '';display: block;background: #ffffff50;height: 205%;width: 20px;transform: rotate(35deg);position: absolute;left: 0;top: -24px;transition: all 0.3s ease-in-out;animation: 3.2s shine infinite;}@keyframes shine {0% {left: -20px;}20% {left: 100%;top: -20px;}100% {left: 100%;top: -20px;}}.mop{transform:rotatey(180deg);margin-bottom:-5px;margin-top:-12px;opacity:2}.select2-container--default .select2-results__option[aria-selected=true] a{color:#fff;}.select2-container--default .select2-results__option:hover a{color:#fff;}.badge.badge-secondary {color: #fff;}.body .style-bg-primary-alpha-10 {background: rgb(233 233 233 / 22%);}
+{% if settings["site_theme_alt"] == "Red" %}
+.totals-block__card-right{ background-color: #fbf1f2; }
+		#service_description,
+		#service_avg_time {padding: 13px;border-radius: 10px;color: #393e46;box-shadow:none;background-color: #fbf1f2;}
+	{% elseif settings["site_theme_alt"] == "Blue" %}
+	.totals-block__card-right{ background-color: #F1F7FC; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #F1F7FC;}
+	{% elseif settings["site_theme_alt"] == "Lime" %}
+	.totals-block__card-right{ background-color: #eff7f0; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #eff7f0;}
+	{% elseif settings["site_theme_alt"] == "Grapes" %}
+	.totals-block__card-right{ background-color: #f3edff; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #f3edff;}
+	{% elseif settings["site_theme_alt"] == "Dark" %}
+	.totals-block__card-right{ background-color: #252427; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #fff;
+			box-shadow:none;
+			background-color: #252427;}
+	{% elseif settings["site_theme_alt"] == "Cyan" %}
+	.totals-block__card-right{ background-color: #e5f9fa; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #e5f9fa;}
+	{% elseif settings["site_theme_alt"] == "Coral" %}
+	.totals-block__card-right{ background-color: #fff5f4; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #fff5f4;}
+	{% elseif settings["site_theme_alt"] == "Green" %}
+	.totals-block__card-right{ background-color: #e4f1ef; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #e4f1ef;}
+		{% elseif settings["site_theme_alt"] == "Grey" %}
+		.totals-block__card-right{ background-color: #e2e8ee; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #e2e8ee;}
+{% elseif settings["site_theme_alt"] == "Lilac" %}
+.totals-block__card-right{ background-color: #f5f2f8; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #f5f2f8;}
+{% elseif settings["site_theme_alt"] == "Orange" %}
+.totals-block__card-right{ background-color: #fff4ed; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #393e46;
+			box-shadow:none;
+			background-color: #fff4ed;}
+	{% else %}
+	.totals-block__card-right{ background-color: #252427; }
+		#service_description,
+		#service_avg_time {
+			padding: 13px;
+			border-radius: 12px;
+			color: #fff;
+			box-shadow:none;
+			background-color: #252427;}
+	{% endif %}
+	{% if settings["site_theme_alt"] == "Red" %}svg {fill: #d83346;}{% elseif settings["site_theme_alt"] == "Blue" %}svg {fill: #1979c8;}{% elseif settings["site_theme_alt"] == "Lime" %}svg {fill: #46b649;}{% elseif settings["site_theme_alt"] == "Grapes" %}.mop{margin-top:15px;}svg {fill: #6216fb;}{% elseif settings["site_theme_alt"] == "Dark" %}svg {fill: #ff8355;}{% elseif settings["site_theme_alt"] == "Cyan" %}svg {fill: #32c7ce;}{% elseif settings["site_theme_alt"] == "Coral" %}svg {fill:#ff6b63;}{% elseif settings["site_theme_alt"] == "Green" %}svg {fill: #307c6f;}{% elseif settings["site_theme_alt"] == "Grey" %}svg {fill: #415566;}{% elseif settings["site_theme_alt"] == "Lilac" %}svg {fill: #7c96cf;}{% elseif settings["site_theme_alt"] == "Orange" %}svg {fill: #f36b15;}{% else %}svg {fill: #000;}{% endif %}
+@media (min-width:992px){
+    .totals-block__card-right{ background-color: #fff; }
+}
+</style>
+   <div class="wrapper-content">
+    <div class="wrapper-content__header">
+  </div>
+    <div class="wrapper-content__body">
+
+  <div id="block_93">
+ 
+ <div class="totals ">
+    <div class="bg"></div>
+    <div class="divider-top"></div>
+    <div class="divider-bottom"></div>
+    <div class="container-fluid">
+        {% if contentText %}
+<div class="card mt-2 mb-2">																
+{{ contentText }}
+</div>
+{% endif %}
+     <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    .custom-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .custom-col {
+      flex: 1 1 calc(25% - 20px); /* Adjust percentage to fit 4 boxes in a row */
+      max-width: calc(25% - 20px);
+      box-sizing: border-box;
+      padding: 1px; /* Increased padding */
+      margin: 10px; /* Increased margin */
+      
+    }
+
+    .custom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  border: 2px solid #ccc; /* Example border: 2px solid gray */
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  height: 100%;
+}
+
+
+    .custom-card-content {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+
+    .custom-card img {
+      width: 60px;
+      height: 60px; /* Equal width and height for a perfect circle */
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    .custom-card-text {
+      margin-left: 10px;
+    }
+
+    .custom-card-text p {
+      margin: 0;
+    }
+
+    .custom-card-text .username {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .custom-card-text .welcome-message {
+      font-size: 16px;
+      color: black;
+    }
+
+    @media (max-width: 768px) {
+      .custom-col {
+        flex: 1 1 calc(50% - 20px); /* Adjust percentage to fit 2 boxes in a row */
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .custom-col {
+        flex: 1 1 100%; /* Stack boxes vertically */
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-row">
+    <div class="custom-col">
+      <div class="custom-card">
+        <div class="custom-card-content">
+          <img src="https://i.postimg.cc/JnryHgbD/management-consulting.gif" alt="gif">
+          <div class="custom-card-text">
+            <p class="username">{{ user["username"] }}</p>
+            <p class="welcome-message">Welcome to {{ site["site_name"] }}!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="custom-col">
+      <div class="custom-card">
+        <div class="custom-card-content">
+          <img src="https://c.tenor.com/o7xzZ5dqClMAAAAC/money-love.gif" alt="gif">
+          <div class="custom-card-text">
+            <p class="username">{{totalorders}}</p>
+            <p class="welcome-message">Total Orders</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="custom-col">
+      <div class="custom-card">
+        <div class="custom-card-content">
+          <img src="https://www.bootgum.com/wp-content/uploads/2018/07/Wallet_Cash_550px.gif" alt="gif">
+          <div class="custom-card-text">
+            <p class="username">{{ user["balance"] }}</p>
+            <p class="welcome-message">Total Balance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="custom-col">
+      <div class="custom-card">
+        <div class="custom-card-content">
+          <img src="https://c.tenor.com/XW-LgnkZQ28AAAAC/shopping-online.gif" alt="gif">
+          <div class="custom-card-text">
+            <p class="username">{{ user["spent"] }}</p>
+            <p class="welcome-message">Total Spend</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    </div>
+</div>
+</div>
+ 
+
+ 
+ 
+<div style="padding-bottom: 2px;padding-top: 2px;" id="block_93">
+    <div class="new_order-block ">
+<div class="bg"></div>
+<div class="divider-top"></div>
+<div class="divider-bottom"></div>
+<div class="container">
+    <div class="row new-order-form">
+<div class="col-lg-7">
+   <div class="component_form_group component_card component_radio_button">
+<div class="card mt-3 ">
+{% if error %}
+      <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">✕</button>
+{{ errorText }}
+      </div>
+    {% endif %}
+
+     {% if data["order"]["success"] == 1 %}
+      <div class="alert alert-dismissible alert-success">
+          <strong> {{ lang["neworder.success.id"] }}: </strong> {{ data['order']['id'] }} <br>
+          <strong> {{ lang["neworder.success.service"] }}: </strong> {{ data['order']['service'] }} <br>
+          <strong> {{ lang["neworder.success.link"] }}: </strong> {{ data['order']['link'] }} <br>
+          <strong> {{ lang["neworder.success.quantity"] }}: </strong> {{ data['order']['quantity'] }} <br>
+          <strong> {{ lang["neworder.success.charge"] }}: </strong> {{ data['order']['price'] }} <br>
+          <strong> {{ lang["neworder.success.balance"] }}: </strong>{{ data['order']['balance'] }} <br>
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">✕</span></button>
+
+      </div>
+    {% endif %}
+    
+    
+    {% if data["order"]["success"] == 2 %}
+      <div class="alert alert-dismissible alert-success">
+ <strong> {{ lang["neworder.success.id"] }}: </strong> {{ data['order']['id'] }} <br>
+ <strong> {{ lang["neworder.success.service"] }}: </strong> {{ data['order']['service'] }} <br>
+ <strong> {{ lang["neworder.success.username"] }}: </strong> {{ data['order']['link'] }} <br>
+ <strong> {{ lang["neworder.success.quantity"] }}: </strong> {{ data['order']['min'] }} - {{ data['order']['max'] }} <br>
+ <strong> {{ lang["neworder.success.posts"] }}: </strong> {{ data['order']['posts'] }} <br>
+ <strong> {{ lang["neworder.success.delay"] }}: </strong>{{ data['order']['delay'] }} <br>
+       </div>
+    {% endif %}
+ 
+
+     <div class="well">
+
+	
+<form method="post" action="">
+<div class="component_button_forms">
+    <div class="form-group">
+<label for="orderform-category" class="control-label">{{ lang["neworder.category"] }}</label>
+
+<select class="form-control" id="neworder_category" name="categories" data-select="true" data-select-search="true" data-select-search-placeholder="Search" data-select-container="#select-category-container" tabindex="-1" aria-hidden="true">
+{{ category_html_simplify }}
+
+</select>
+<div id="select-category-container" class="position-relative"></div>
+</div>
+</div>
+    <div class="form-group">
+<label for="orderform-service" class="control-label">{{ lang["neworder.service"] }}</label>
+<select class="form-control" id="neworder_services" name="services" data-select="true" data-select-search="true" data-select-search-placeholder="Search" data-select-container="#select-service-container" tabindex="-1" aria-hidden="true">
+<option value="1">No services found in this category</option>
+</select>
+<div id="select-service-container" class="position-relative"></div>
+    </div>
+
+
+  
+  
+  
+  
+  
+  
+  
+
+    <div id="neworder_fields"></div>
+
+  
+  <div class="form-group" id="charge_div">
+      <label for="charge" class="control-label">Charge</label>
+      <input type="text" class="form-control" id="charge" readonly>
+    </div>
+  
+
+
+
+
+
+  
+  <button type="submit" class="btn btn-block btn-big-primary">{{ lang["neworder.button"] }}</button>
+</form>
+</div>
+   </div>
+</div>
+    </div>
+
+<div class="col-lg-5 mt-3">
+  <div class="component_content_card component_content_button component_content_headers">
+{% if news %}
+    <div style="padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;" class="card mb-3">
+      <div class="style-bg-primary headsir"><i class="fal fa-newspaper mr-2"></i>Latest News</div>
+      <div class="ssw">
+      {% for new in news %}
+      <div class="news-item">
+        <div class="news-details">
+          <p class="style-bg-primary news-date"><i class="fad fa-calendar-alt mr-1" style="--fa-secondary-opacity: 0.65;"></i>{{ new['news_date'] }}</p>
+          <h4 id="service_description" class="">
+            <span class="icon-container">
+              <img width="20" class="news-icon-inline" src="{{ new['news_icon'] }}" alt="News Icon">
+            </span>
+            {{ new['news_title'] }}
+          </h4>
+          <p id="" class= "" >{{ new['news_content'] }}</p>
+        </div>
+      </div>
+      {% endfor %}
+      </div>
+  </div>
+  </div>
+{% endif%}
+
+<div class="container">
+</div>	
+{% if contentText2 %}
+<div class="card mt-3 mb-4">
+{{ contentText2 }}
+</div>
+{% endif %}
+														
+</div></div>
+</div></div>
+</div>
+</div></div></div>
+</div></div>
+</div>
+</div>
+{% include 'footer.twig' %}
